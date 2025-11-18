@@ -14,6 +14,8 @@ dist-ssr
 
 Final.md
 
+.gitignore
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
