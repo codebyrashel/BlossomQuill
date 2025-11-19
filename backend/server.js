@@ -4,6 +4,8 @@ const cors = require("cors");
 const path = require("path");
 const connectBD = require("./config/db");
 
+const authRoutes = require('./routes/authRoutes');
+
 const app = express();
 
 // Middleware to handle CORS
@@ -23,6 +25,10 @@ app.use(express.json());
 
 //Static folder for uploads
 app.use("/backend/uploads", express.static(path.join(__dirname, "uploads")));
+
+// Routes Here
+app.use("/api/auth", authRoutes);
+
 
 // Start Server
 const PORT = process.env.PORT || 5000;
