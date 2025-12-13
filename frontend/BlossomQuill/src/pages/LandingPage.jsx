@@ -11,6 +11,7 @@ const LandingPage = () => {
     { name: 'Features', href: "#features" },
     { name: "Testimonials", href: "#testimonials" }
   ]
+  
 
   useEffect(() => {
     const handleClickOutside = () => {
